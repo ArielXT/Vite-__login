@@ -31,8 +31,7 @@ const Home = () => {
                 </div>
                 <div className="container">
                     <h3>Imagen del Usuario:</h3>
-                    <h2>{user?.login}</h2>
-                    
+                    <h2>{user?.login}</h2>                    
                 </div>
                 <br />
                 <br />
