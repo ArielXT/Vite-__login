@@ -1,13 +1,16 @@
 import Router from "./router";
 import { ThemeProvider } from "@mui/material/styles";
-import theme from "./theme";
+import { UserProvider } from "./context/UserContext";
 import "./index.css";
+import theme from "./theme";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Router />
-    </ThemeProvider>
+    <UserProvider>
+      <ThemeProvider theme={theme}>
+        <Router />
+      </ThemeProvider>
+    </UserProvider>
   );
 }
 
